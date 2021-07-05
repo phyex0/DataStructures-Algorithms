@@ -1,5 +1,15 @@
 package com.company.DataStructures;
 
+/*
+*   Linked List:
+*
+*
+*
+*
+*
+*
+* */
+
 public class LinkedList {
 
     class Node{

@@ -1,12 +1,13 @@
 package com.company.Algorithms;
+
 /*
-*  Bubble Sort =
+*   Bubble Sort:
+*   Best case       = O(n)
+*   Average case    = O(n^2)
+*   Worst case      = O(n^2)
 *
-*
-*
-*
-*
-* */
+*   This algorithm sorts the array min to max. If current item is greater than the next it swaps.
+*/
 
 public class BubbleSort {
 
