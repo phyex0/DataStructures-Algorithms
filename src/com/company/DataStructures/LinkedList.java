@@ -2,13 +2,17 @@ package com.company.DataStructures;
 
 /*
 *   Linked List:
+*   Random access is not simple like the arrays
+*   Linked List has unlimited size. It depending your memory.
 *
+*   Inserting to head           = o(1)
+*   Inserting to end            = o(1)
+*   Inserting to given index    = o(n)
+*   Deleting given item         = o(n)
+*   Reversing the list          = o(n)
+*   Searching an item           = o(n)
 *
-*
-*
-*
-*
-* */
+*/
 
 public class LinkedList {
 
@@ -149,6 +153,23 @@ public class LinkedList {
 
        root= reverseList.root;
        tail = reverseList.tail;
+    }
+
+    //if the given value exists in the list it returns true else it's false
+    public boolean isExists(int val){
+        Node iter =root;
+        boolean result =false;
+
+        while(iter!= null){
+            if(iter.val == val){
+                result = true;
+                break;
+            }
+            iter=iter.next;
+
+        }
+
+        return result;
     }
 
 
