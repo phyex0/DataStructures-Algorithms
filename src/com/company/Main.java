@@ -1,18 +1,22 @@
 package com.company;
 
-import com.company.Algorithms.BubbleSort;
-import com.company.Algorithms.LinearSearch;
-import com.company.DataStructures.LinkedList;
+import com.company.DataStructures.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int[] arr = new int[]{10,9,9,8,7,5,4,3,2,1};
-        BubbleSort.bubbleSort(arr);
+        Stack myStack = new Stack(5);
 
-        System.out.println(LinearSearch.linearSearch(arr,10));
+        for(int i=0;i<5;i++){
+            myStack.push(i*10);
+            System.out.println(myStack.peek());
+        }
+        myStack.push(20);
 
+        for(int i=0;i<5;i++)
+            System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
 
 
     }
