@@ -1,22 +1,24 @@
 package com.company;
 
+import com.company.DataStructures.Queue;
 import com.company.DataStructures.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Stack myStack = new Stack(5);
+
+        Queue myQueue = new Queue(5);
 
         for(int i=0;i<5;i++){
-            myStack.push(i*10);
-            System.out.println(myStack.peek());
+            myQueue.enqueue(i*10);
+            System.out.println(myQueue.peek());
         }
-        myStack.push(20);
+        myQueue.enqueue(20);
 
         for(int i=0;i<5;i++)
-            System.out.println(myStack.pop());
-        System.out.println(myStack.pop());
+            System.out.println(myQueue.dequeue());
+        System.out.println(myQueue.dequeue());
 
 
     }
