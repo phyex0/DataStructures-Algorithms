@@ -19,7 +19,7 @@ public class Stack {
     //Constructor of the stack.
     public Stack(int size) {
         this.size = size;
-        myArray = new int[size];
+        myArray = new int[this.size];
     }
 
     // Checking the stack about being empty.
