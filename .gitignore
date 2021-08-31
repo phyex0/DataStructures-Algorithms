@@ -1,4 +1,4 @@
 # Project exclude paths
 /out/
-.idea/
-Data Structures & Algorithms.iml/
+/Data Structures & Algorithms.iml/
+/.idea/
