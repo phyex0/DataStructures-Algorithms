@@ -13,7 +13,7 @@ package com.company.Algorithms;
 
 public class BinarySearch {
 
-    public static int binarySearch(int[] arr, int val) {
+    public static int search(int[] arr, int val) {
         int index = -1, left = 0, right = arr.length, mid;
 
         while (right > 1) {

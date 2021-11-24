@@ -11,7 +11,7 @@ package com.company.Algorithms;
 
 public class BubbleSort {
 
-    public static void bubbleSort(int[] arr) {
+    public static void sort(int[] arr) {
         int len = arr.length;
 
         for (int i = 0; i < len - 1; i++) {
